@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUMENFALL — Descent of the Last Light</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: #05030d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
+    overflow: hidden;
+  }
+  #game {
+    width: min(96vw, 177.78vh);
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(124, 92, 255, 0.35), 0 0 0 1px #3d2a6b;
+    cursor: crosshair;
+    image-rendering: auto;
+  }
+  .hint {
+    color: #6f5d94;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+  .hint b { color: #a99ac9; font-weight: 600; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="540"></canvas>
+<p class="hint"><b>WASD</b> move &nbsp;·&nbsp; <b>Mouse</b> aim &nbsp;·&nbsp; <b>Click / Space</b> slash &nbsp;·&nbsp; <b>Shift</b> dash &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
